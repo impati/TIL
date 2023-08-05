@@ -1,7 +1,7 @@
 ## Spring Web Exception 은 어디서 처리할까 ? 
 별도의 ExceptionHandler 로 예외를 처리하지 않는 이상 `DefaultHandlerExceptionResolver` 가 동작한다.
-Spring Web 이 제공하는 예외 중 커스텀하게 처리하고 싶은 경우 ResponseEntityExceptionHandler 를 상속받고 Override 해주면 가능하다.
-혹은 Spring Web Exception 을 직접 @ExceptionHandler(HttpRequestMethodNotSupportedException.class) 로 처리해주는 방법도 있다.
+Spring Web 이 제공하는 예외 중 커스텀하게 처리하고 싶은 경우 `ResponseEntityExceptionHandler` 를 상속받고 Override 해주면 가능하다.
+혹은 Spring Web Exception 을 직접 `@ExceptionHandler(HttpRequestMethodNotSupportedException.class)` 로 처리해주는 방법도 있다.
 
 ## 대표적인 Spring Web 예외들
 
